@@ -18,4 +18,4 @@
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 sed -i "/helloworld/d" "feeds.conf.default"
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
-src/gz openwrt_kiddin9 https://dl.openwrt.ai/latest/packages/x86_64/kiddin9
+echo "src-git kiddin9 https://dl.openwrt.ai/23.05/packages/x86_64/kiddin9/" >> "feeds.conf.default"
