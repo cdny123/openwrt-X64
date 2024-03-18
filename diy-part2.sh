@@ -19,7 +19,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 # 修改主机名称
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 #酷猫主题高级设置
-git clone https://github.com/sirpdboy/luci-app-advancedplus/releases package/luci-app-advancedplus
+#git clone https://github.com/sirpdboy/luci-app-advancedplus/releases package/luci-app-advancedplus
 # 一键自动格式化分区、扩容、自动挂载插件
 #git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
 # ChatGPT
