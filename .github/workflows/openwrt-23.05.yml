@@ -76,10 +76,7 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
-        script: |
-          ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "ls -l"
-
+        
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
